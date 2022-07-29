@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.edgar.lytodifferentcolor.Object._ImgCustom
+        android:id="@+id/ivPointColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:tint="#F3A92F"
+        android:src="@drawable/circle_point_color" />
+
+</RelativeLayout>

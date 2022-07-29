@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292234"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Chúc mừng bạn đã đạt được"
+        android:textAllCaps="true"
+        android:textColor="#E56BA6"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/kitty_1" />
+
+    </RelativeLayout>
+
+    <!-- View Group này chứa thông tin các màn chơi đã vượt qua -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Layout thể hiện level màn chơi -->
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Level"
+                android:textAllCaps="true"
+                android:textColor="#E56BA6"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLevelsEndgame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="123"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <!-- Layout thể hiện thời gian tổng điểm người chơi đạt được -->
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Score"
+                android:textAllCaps="true"
+                android:textColor="#E56BA6"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvScoreEndGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="11"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- View Group này chứa button thực thi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvRestart"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Chơi lại"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:padding="6dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_tv_score"/>
+
+        <TextView
+            android:id="@+id/tvExit"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Thoát"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:padding="6dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_tv_score"/>
+
+    </LinearLayout>
+
+</LinearLayout>
